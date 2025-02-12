@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro e listagem de produtos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <form id="product-form" autocomplete="off">
+      <h1>Cadastro e listagem de produtos</h1>
+      <fieldset class="input-container">
+        <label for="name-input">Nome do produto:</label>
+        <input id="name-input" name="name-product" type="text" />
+        <br />
+
+        <label for="desc-input">Descrição do produto:</label>
+        <input id="desc-input" name="desc-product" type="text" />
+        <br />
+
+        <label for="value-input">Valor do produto:</label>
+        <input
+          id="value-input"
+          name="value-product"
+          type="text"
+          placeholder="R$: Ex: 120,00"
+        />
+        <br />
+
+        <span>Disponível para venda:</span>
+        <section class="input-radio-container">
+          <input id="yes" name="available-product" type="radio" value="Sim" />
+          <label for="yes">Sim</label>
+          <input id="no" name="available-product" type="radio" value="Não" />
+          <label for="no">Não</label>
+        </section>
+        <button type="submit" id="btn-add-product">Cadastrar Produto</button>
+      </fieldset>
+    </form>
+    <div class="table-container">
+      <table id="table-data">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Valor</th>
+            <th>Disponível</th>
+            <th>Descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,181 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  /* background-color: #ecf0f1; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+#product-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 660px;
+  min-width: 360px;
+  padding: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 8px;
+  padding: 16px;
+  background-color: #ecf0f1;
+  border: 1px solid #7f8c8d;
+}
+
+.input-container input[type="text"] {
+  text-indent: 16px;
+  width: 90%;
+  padding: 8px;
+  outline-color: #2ecc71;
+}
+
+.input-radio-container label{
+  cursor: pointer;
+}
+
+.input-container button {
+  border: none;
+  height: 40px;
+  width: 100%;
+  background-color: #2ecc71;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.input-container button:hover {
+  background-color: #27ae60;
+}
+
+#table-data {
+  max-width: 1250px;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 16px;
+}
+
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  width: 80%;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #1abc9c;
+}
